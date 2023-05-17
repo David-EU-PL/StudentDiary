@@ -76,6 +76,7 @@
             this.lbFirstName.Size = new System.Drawing.Size(26, 13);
             this.lbFirstName.TabIndex = 3;
             this.lbFirstName.Text = "Imię";
+           
             // 
             // tbFirstName
             // 
@@ -83,6 +84,7 @@
             this.tbFirstName.Name = "tbFirstName";
             this.tbFirstName.Size = new System.Drawing.Size(210, 20);
             this.tbFirstName.TabIndex = 2;
+         
             // 
             // lbLastName
             // 
@@ -201,7 +203,7 @@
             // btnConfirm
             // 
             this.btnConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnConfirm.Location = new System.Drawing.Point(217, 346);
+            this.btnConfirm.Location = new System.Drawing.Point(109, 347);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(75, 23);
             this.btnConfirm.TabIndex = 18;
@@ -212,7 +214,7 @@
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnCancel.Location = new System.Drawing.Point(114, 346);
+            this.btnCancel.Location = new System.Drawing.Point(218, 347);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 19;
