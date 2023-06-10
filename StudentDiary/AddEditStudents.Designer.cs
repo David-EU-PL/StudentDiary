@@ -57,7 +57,6 @@
             this.tbID.ReadOnly = true;
             this.tbID.Size = new System.Drawing.Size(211, 20);
             this.tbID.TabIndex = 0;
-            this.tbID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lbID
             // 
@@ -76,15 +75,14 @@
             this.lbFirstName.Size = new System.Drawing.Size(26, 13);
             this.lbFirstName.TabIndex = 3;
             this.lbFirstName.Text = "Imię";
-           
             // 
             // tbFirstName
             // 
+            this.tbFirstName.BackColor = System.Drawing.SystemColors.Window;
             this.tbFirstName.Location = new System.Drawing.Point(82, 53);
             this.tbFirstName.Name = "tbFirstName";
             this.tbFirstName.Size = new System.Drawing.Size(210, 20);
             this.tbFirstName.TabIndex = 2;
-         
             // 
             // lbLastName
             // 
@@ -94,6 +92,7 @@
             this.lbLastName.Size = new System.Drawing.Size(53, 13);
             this.lbLastName.TabIndex = 5;
             this.lbLastName.Text = "Nazwisko";
+            this.lbLastName.Click += new System.EventHandler(this.lbLastName_Click);
             // 
             // tbLastName
             // 
@@ -198,7 +197,6 @@
             this.lbComments.Size = new System.Drawing.Size(37, 13);
             this.lbComments.TabIndex = 17;
             this.lbComments.Text = "Uwagi";
-            this.lbComments.Click += new System.EventHandler(this.label8_Click);
             // 
             // btnConfirm
             // 
@@ -226,7 +224,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(319, 392);
+            this.ClientSize = new System.Drawing.Size(319, 376);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.lbComments);
@@ -247,8 +245,12 @@
             this.Controls.Add(this.tbFirstName);
             this.Controls.Add(this.lbID);
             this.Controls.Add(this.tbID);
+            this.MaximumSize = new System.Drawing.Size(335, 415);
+            this.MinimumSize = new System.Drawing.Size(335, 415);
             this.Name = "AddEditStudents";
-            this.Text = "AddEditStudents";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Dodawanie ucznia";
+            this.Load += new System.EventHandler(this.AddEditStudents_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
