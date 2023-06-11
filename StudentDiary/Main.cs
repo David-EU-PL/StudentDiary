@@ -18,20 +18,15 @@ namespace StudentDiary
             RefreshDiary();
             SetColumnsHeader();
 
-            var list = new List<int> { -2, 432, 22, 5, 85 };
-            var list2 = (from x in list
-                        where x > 10
-                        select x).ToList();
+            var student1 = new Student();
+            student1.FirstName = "1";
+            student1.Id = 1;
 
-            var list3  = list.Where(x => x > 10).OrderBy(x => x).ToList(); 
-            var anyNumberBiggerThan100 = list.Any(x => x > 100);
-            MessageBox.Show(anyNumberBiggerThan100.ToString());
-            var contain10 = list.Contains(10);
-            var sum = list.Sum();
-            var count = list.Count();
-            var avg = list.Average();
-            var max = list.Max();
-            var FirstElement = list.First();
+            var person = new Person();
+            person.Id = 2;
+
+            person = student1;
+            MessageBox.Show(person.Id.ToString());
 
         }
 
